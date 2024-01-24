@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Neural_Network_library", "Neural_Network_library\Neural_Network_library.vcxproj", "{F0245DF6-0480-48AC-BAD9-CC367699DBCB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Neural_Network_Library_Test", "Neural_Network_Library_Test\Neural_Network_Library_Test.vcxproj", "{99AE3892-36F2-4F13-964D-53E7FD06E614}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0245DF6-0480-48AC-BAD9-CC367699DBCB}.Debug|x64.ActiveCfg = Debug|x64
+		{F0245DF6-0480-48AC-BAD9-CC367699DBCB}.Debug|x64.Build.0 = Debug|x64
+		{F0245DF6-0480-48AC-BAD9-CC367699DBCB}.Debug|x86.ActiveCfg = Debug|Win32
+		{F0245DF6-0480-48AC-BAD9-CC367699DBCB}.Debug|x86.Build.0 = Debug|Win32
+		{F0245DF6-0480-48AC-BAD9-CC367699DBCB}.Release|x64.ActiveCfg = Release|x64
+		{F0245DF6-0480-48AC-BAD9-CC367699DBCB}.Release|x64.Build.0 = Release|x64
+		{F0245DF6-0480-48AC-BAD9-CC367699DBCB}.Release|x86.ActiveCfg = Release|Win32
+		{F0245DF6-0480-48AC-BAD9-CC367699DBCB}.Release|x86.Build.0 = Release|Win32
+		{99AE3892-36F2-4F13-964D-53E7FD06E614}.Debug|x64.ActiveCfg = Debug|x64
+		{99AE3892-36F2-4F13-964D-53E7FD06E614}.Debug|x64.Build.0 = Debug|x64
+		{99AE3892-36F2-4F13-964D-53E7FD06E614}.Debug|x86.ActiveCfg = Debug|Win32
+		{99AE3892-36F2-4F13-964D-53E7FD06E614}.Debug|x86.Build.0 = Debug|Win32
+		{99AE3892-36F2-4F13-964D-53E7FD06E614}.Release|x64.ActiveCfg = Release|x64
+		{99AE3892-36F2-4F13-964D-53E7FD06E614}.Release|x64.Build.0 = Release|x64
+		{99AE3892-36F2-4F13-964D-53E7FD06E614}.Release|x86.ActiveCfg = Release|Win32
+		{99AE3892-36F2-4F13-964D-53E7FD06E614}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3581BD85-6777-4957-A383-B8C5765D5B62}
+	EndGlobalSection
+EndGlobal

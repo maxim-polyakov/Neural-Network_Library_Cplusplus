@@ -1,0 +1,14 @@
+﻿  AbstractPNN.h
+C:\Users\maxim\source\repos\Neural_Network_library\Neural_Network_library\PNNOutputMode.h(3,1): error C2236: unexpected token 'enum'. Did you forget a ';'?
+  (compiling source file 'AbstractPNN.h')
+  
+C:\Users\maxim\source\repos\Neural_Network_library\Neural_Network_library\PNNOutputMode.h(3,20): error C2059: syntax error: '{'
+  (compiling source file 'AbstractPNN.h')
+  
+C:\Users\maxim\source\repos\Neural_Network_library\Neural_Network_library\PNNOutputMode.h(3,20): error C2143: syntax error: missing ';' before '{'
+  (compiling source file 'AbstractPNN.h')
+  
+C:\Users\maxim\source\repos\Neural_Network_library\Neural_Network_library\PNNOutputMode.h(3,20): error C2447: '{': missing function header (old-style formal list?)
+  (compiling source file 'AbstractPNN.h')
+  
+C:\Users\maxim\source\repos\Neural_Network_library\Neural_Network_library\AbstractPNN.h(18,9): error C2061: syntax error: identifier 'PNNOutputMode'

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f0245df6-0480-48ac-bad9-cc367699dbcb}</ProjectGuid>
+    <RootNamespace>NeuralNetworklibrary</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractPNN.h" />
+    <ClCompile Include="ActivationBiPolar.cpp" />
+    <ClCompile Include="ActivationCompetitive.cpp" />
+    <ClCompile Include="ActivationElliott.cpp" />
+    <ClCompile Include="ActivationElliottSymmetric.cpp" />
+    <ClCompile Include="ActivationGaussian.cpp" />
+    <ClCompile Include="ActivationLinear.cpp" />
+    <ClCompile Include="ActivationLOG.cpp" />
+    <ClCompile Include="ActivationRamp.cpp" />
+    <ClCompile Include="ActivationSigmoid.cpp" />
+    <ClCompile Include="ActivationSIN.cpp" />
+    <ClCompile Include="ActivationSoftMax.cpp" />
+    <ClCompile Include="ActivationStep.cpp" />
+    <ClCompile Include="ActivationTANH.cpp" />
+    <ClCompile Include="ADALINEPattern.cpp" />
+    <ClCompile Include="Address.cpp" />
+    <ClCompile Include="AnalyzeNetwork.cpp" />
+    <ClCompile Include="AnnealFactory.cpp" />
+    <ClCompile Include="ArchitectureLayer.cpp" />
+    <ClCompile Include="ArchitectureParse.cpp" />
+    <ClCompile Include="ArrayDataCODEC.cpp" />
+    <ClCompile Include="ART1.cpp" />
+    <ClCompile Include="ART1Pattern.cpp" />
+    <ClCompile Include="Backpropagation.cpp" />
+    <ClCompile Include="BackPropFactory.cpp" />
+    <ClCompile Include="BAMNetwork.cpp" />
+    <ClCompile Include="BAMPattern.cpp" />
+    <ClCompile Include="BasicART.cpp" />
+    <ClCompile Include="BasicGenerateID.cpp" />
+    <ClCompile Include="BasicInnovation.cpp" />
+    <ClCompile Include="BasicInnovationList.cpp" />
+    <ClCompile Include="BasicInputField.cpp" />
+    <ClCompile Include="BasicLayer.cpp" />
+    <ClCompile Include="BasicMLComplexData.cpp" />
+    <ClCompile Include="BasicMLData.cpp" />
+    <ClCompile Include="BasicMLDataCentroid.cpp" />
+    <ClCompile Include="BasicMLDataPair.cpp" />
+    <ClCompile Include="BasicMLDataPairCentroid.cpp" />
+    <ClCompile Include="BasicMLDataSet.cpp" />
+    <ClCompile Include="BasicMLSequenceSet.cpp" />
+    <ClCompile Include="BasicNetwork.cpp" />
+    <ClCompile Include="BasicNeuralData.cpp" />
+    <ClCompile Include="BasicNeuralDataSet.cpp" />
+    <ClCompile Include="BasicPNN.cpp" />
+    <ClCompile Include="BasicPopulation.cpp" />
+    <ClCompile Include="BasicSpecies.cpp" />
+    <ClCompile Include="BasicTrainSOM.cpp" />
+    <ClCompile Include="BayesianChoice.cpp" />
+    <ClCompile Include="BayesianError.cpp" />
+    <ClCompile Include="BayesianEvent.cpp" />
+    <ClCompile Include="BayesianFactory.cpp" />
+    <ClCompile Include="BayesianNetwork.cpp" />
+    <ClCompile Include="BayesianTable.cpp" />
+    <ClCompile Include="BestMatchingUnit.cpp" />
+    <ClCompile Include="BIFDefinition.cpp" />
+    <ClCompile Include="BIFVariable.cpp" />
+    <ClCompile Include="BinaryDataLoader.cpp" />
+    <ClCompile Include="BiPolarMLData.cpp" />
+    <ClCompile Include="BiPolarUtil.cpp" />
+    <ClCompile Include="BoltzmannMachine.cpp" />
+    <ClCompile Include="BoltzmannPattern.cpp" />
+    <ClCompile Include="BotError.cpp" />
+    <ClCompile Include="BotUtil.cpp" />
+    <ClCompile Include="BoundMath.cpp" />
+    <ClCompile Include="BoundNumbers.cpp" />
+    <ClCompile Include="BrowseError.cpp" />
+    <ClCompile Include="Browser.cpp" />
+    <ClCompile Include="BufferedDataError.cpp" />
+    <ClCompile Include="BufferedMLDataSet.cpp" />
+    <ClCompile Include="BufferedNeuralDataSetEnumerator.cpp" />
+    <ClCompile Include="Cache.cpp" />
+    <ClCompile Include="CalculateRegressionError.cpp" />
+    <ClCompile Include="ChainRuleWorker.cpp" />
+    <ClCompile Include="CholeskyDecomposition.cpp" />
+    <ClCompile Include="ClassItem.cpp" />
+    <ClCompile Include="Cluster.cpp" />
+    <ClCompile Include="ClusterSOMFactory.cpp" />
+    <ClCompile Include="CodeDataUnit.cpp" />
+    <ClCompile Include="CompareArray.cpp" />
+    <ClCompile Include="ComplexNumber.cpp" />
+    <ClCompile Include="ConsistentRandomizer.cpp" />
+    <ClCompile Include="ConsoleStatusReportable.cpp" />
+    <ClCompile Include="ConstRandomizer.cpp" />
+    <ClCompile Include="Convert.cpp" />
+    <ClCompile Include="CPNNetwork.cpp" />
+    <ClCompile Include="CPNPattern.cpp" />
+    <ClCompile Include="CrossValidationKFold.cpp" />
+    <ClCompile Include="CSVDataCODEC.cpp" />
+    <ClCompile Include="CSVError.cpp" />
+    <ClCompile Include="CSVFinal.cpp" />
+    <ClCompile Include="CSVFormat.cpp" />
+    <ClCompile Include="CSVLoader.cpp" />
+    <ClCompile Include="CSVMLDataSet.cpp" />
+    <ClCompile Include="DataNormalization.cpp" />
+    <ClCompile Include="DataUnit.cpp" />
+    <ClCompile Include="DateNormalize.cpp" />
+    <ClCompile Include="DateUtil.cpp" />
+    <ClCompile Include="DeriveMinimum.cpp" />
+    <ClCompile Include="DetermineWorkload.cpp" />
+    <ClCompile Include="Directory.cpp" />
+    <ClCompile Include="DirectoryUtil.cpp" />
+    <ClCompile Include="Distort.cpp" />
+    <ClCompile Include="Div.cpp" />
+    <ClCompile Include="DocumentRange.cpp" />
+    <ClCompile Include="DoubleGene.cpp" />
+    <ClCompile Include="DumpMatrix.cpp" />
+    <ClCompile Include="EigenvalueDecomposition.cpp" />
+    <ClCompile Include="ElmanPattern.cpp" />
+    <ClCompile Include="EngineArray.cpp" />
+    <ClCompile Include="EngineConcurrency.cpp" />
+    <ClCompile Include="EnglishTimeUnitNames.cpp" />
+    <ClCompile Include="EnumerationQuery.cpp" />
+    <ClCompile Include="Equilateral.cpp" />
+    <ClCompile Include="EstimatorNone.cpp" />
+    <ClCompile Include="Evaluate.cpp" />
+    <ClCompile Include="EventState.cpp" />
+    <ClCompile Include="FanInRandomizer.cpp" />
+    <ClCompile Include="FeedforwardFactory.cpp" />
+    <ClCompile Include="FeedForwardPattern.cpp" />
+    <ClCompile Include="FileName.cpp" />
+    <ClCompile Include="FileUtil.cpp" />
+    <ClCompile Include="FlatLayer.cpp" />
+    <ClCompile Include="FlatNetwork.cpp" />
+    <ClCompile Include="FlatNetworkRBF.cpp" />
+    <ClCompile Include="FoldedDataSet.cpp" />
+    <ClCompile Include="FoldedEnumerator.cpp" />
+    <ClCompile Include="Form.cpp" />
+    <ClCompile Include="Format.cpp" />
+    <ClCompile Include="FormUtility.cpp" />
+    <ClCompile Include="IT.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BayesianInit.h" />
+    <ClInclude Include="ErrorCalculationMode.h" />
+    <ClInclude Include="EventType.h" />
+    <ClInclude Include="IActivationFunction.h" />
+    <ClInclude Include="IBayesEstimator.h" />
+    <ClInclude Include="IBayesSearch.h" />
+    <ClInclude Include="ICalculateScore.h" />
+    <ClInclude Include="ICalculateTScore.h" />
+    <ClInclude Include="ICalculationCriteria.h" />
+    <ClInclude Include="ICentroid.h" />
+    <ClInclude Include="ICentroidFactory.h" />
+    <ClInclude Include="IComputeHessian.h" />
+    <ClInclude Include="IContainsFlat.h" />
+    <ClInclude Include="ICrossover.h" />
+    <ClInclude Include="IDataSetCODEC.h" />
+    <ClInclude Include="IDownSample.h" />
+    <ClInclude Include="IEndTrainingStrategy.h" />
+    <ClInclude Include="IEngineTask.h" />
+    <ClInclude Include="IErrorFunction.h" />
+    <ClInclude Include="IExtract.h" />
+    <ClInclude Include="IExtractListener.h" />
+    <ClInclude Include="IGene.h" />
+    <ClInclude Include="IGenerateID.h" />
+    <ClInclude Include="IHasFixedLength.h" />
+    <ClInclude Include="IInnovation.h" />
+    <ClInclude Include="IInnovationList.cs.h" />
+    <ClInclude Include="IInputField.h" />
+    <ClInclude Include="ILayer.h" />
+    <ClInclude Include="ILearningRate.h" />
+    <ClInclude Include="IMarketLoader.h" />
+    <ClInclude Include="IMLAutoAssocation.h" />
+    <ClInclude Include="IMLClassification.h" />
+    <ClInclude Include="IMLCluster.h" />
+    <ClInclude Include="IMLClustering.h" />
+    <ClInclude Include="IMLComplexData.h" />
+    <ClInclude Include="IMLContext.h" />
+    <ClInclude Include="IMLData.h" />
+    <ClInclude Include="IMLDataPair.h" />
+    <ClInclude Include="IMLDataSet.h" />
+    <ClInclude Include="IMLEncodable.h" />
+    <ClInclude Include="IMLError.h" />
+    <ClInclude Include="IMLInput.h" />
+    <ClInclude Include="IMLInputOutput.h" />
+    <ClInclude Include="IMLMethod.h" />
+    <ClInclude Include="IMLOutput.h" />
+    <ClInclude Include="IMLProperties.h" />
+    <ClInclude Include="IMLRegression.h" />
+    <ClInclude Include="IMLResettable.h" />
+    <ClInclude Include="IMLSequenceSet.h" />
+    <ClInclude Include="IMLStateSequence.h" />
+    <ClInclude Include="IMLTrain.h" />
+    <ClInclude Include="IMomentum.h" />
+    <ClInclude Include="IMultiThreadable.h" />
+    <ClInclude Include="IMutate.h" />
+    <ClInclude Include="INeighborhoodFunction.h" />
+    <ClInclude Include="INeuralData.h" />
+    <ClInclude Include="INeuralNetworkPattern.h" />
+    <ClInclude Include="INormalizationStorage.h" />
+    <ClInclude Include="IOutputField.h" />
+    <ClInclude Include="IOutputFieldGroup.h" />
+    <ClInclude Include="IPersistor.h" />
+    <ClInclude Include="IPopulation.h" />
+    <ClInclude Include="IRadialBasisFunction.h" />
+    <ClInclude Include="IRandomizer.h" />
+    <ClInclude Include="IRequireTwoPass.h" />
+    <ClInclude Include="ISegregator.h" />
+    <ClInclude Include="ISpecies.h" />
+    <ClInclude Include="IStatusReportable.h" />
+    <ClInclude Include="IStrategy.h" />
+    <ClInclude Include="ISyntPersistor.h" />
+    <ClInclude Include="ISyntPluginLogging1.h" />
+    <ClInclude Include="ISyntPluginService1.h" />
+    <ClInclude Include="ITimeUnitNames.h" />
+    <ClInclude Include="ITrain.h" />
+    <ClInclude Include="KernelType.h" />
+    <ClInclude Include="MarketDataType.h" />
+    <ClInclude Include="NetworkPattern.h" />
+    <ClInclude Include="NormalizationAction.h" />
+    <ClInclude Include="PNNKernelType.h" />
+    <ClInclude Include="PNNOutputMode.h" />
+    <ClInclude Include="RBFEnum.h" />
+    <ClInclude Include="RPROPType.h" />
+    <ClInclude Include="SVMType.h" />
+    <ClInclude Include="SyntPluginBase.h" />
+    <ClInclude Include="TemporalType.h" />
+    <ClInclude Include="TimeUnit.h" />
+    <ClInclude Include="TrainingImplementationType.h" />
+    <ClInclude Include="YInnovationType.h" />
+    <ClInclude Include="YNeuronType.h" />
+    <ClInclude Include="YParent.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1 @@
+C:\Users\maxim\source\repos\Neural_Network_library\Neural_Network_Library_Test\x64\Debug\Neural_Network_Library_Test.vcxproj.CopyComplete
